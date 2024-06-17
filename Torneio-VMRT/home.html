@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio VMRT</title>
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="shortcut icon" href="./Images/VMRT.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="container_header">
+                <a href="./home.html" class="header_redirect_logo">
+                    <img src="./Images/VMRT.png" alt="logo_vmrt" class="logo_vmrt">
+                </a>
+                <ul class="header_redirect_list">
+                    <li>
+                        <a href="./sobre.html" class="header_redirect_option">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="./edicao.html" class="header_redirect_option">Edição 2024</a>
+                    </li>
+                    <li>
+                        <a href="./galeria.html" class="header_redirect_option">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="./contatos.html" class="header_redirect_option">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <button id="button_redirect">Saiba Mais</button>
+    </main>
+    <script>
+        const button = document.getElementById("button_redirect");
+        button.onclick = function () {
+            window.location.href = "./sobre.html";
+        };
+
+    </script>
+</body>
+
+</html>

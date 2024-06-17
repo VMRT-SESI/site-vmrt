@@ -1,0 +1,37 @@
+header {
+    height: 65px;
+    padding: 0 1rem;
+    padding-inline: 2rem;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_header a.header_redirect_logo img.logo_vmrt{
+    max-width: 45px;
+    max-height: 45px;
+}
+
+ul.header_redirect_list {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    list-style-type: none;
+}
+
+ul.header_redirect_list li a.header_redirect_option {
+    text-decoration: none;
+}
+
+ul.header_redirect_list li a.header_redirect_option:hover {
+    text-decoration: underline 1px #f3f3f3;
+    transition: 500ms;
+}
