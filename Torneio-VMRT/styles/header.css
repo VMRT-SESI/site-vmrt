@@ -16,8 +16,8 @@ header .container_header {
 }
 
 .container_header a.header_redirect_logo img.logo_vmrt{
-    max-width: 45px;
-    max-height: 45px;
+    width: 45px;
+    height: 45px;
 }
 
 ul.header_redirect_list {
@@ -34,4 +34,19 @@ ul.header_redirect_list li a.header_redirect_option {
 ul.header_redirect_list li a.header_redirect_option:hover {
     text-decoration: underline 1px #f3f3f3;
     transition: 500ms;
+}
+
+@media screen and (max-width: 560px) {
+    header {
+        padding-inline: 1rem;
+    }
+
+    .container_header a.header_redirect_logo img.logo_vmrt {
+        width: 30px;
+        height: 30px;
+    }
+
+    ul.header_redirect_list li a.header_redirect_option {
+        font-size: 14px;
+    }
 }
