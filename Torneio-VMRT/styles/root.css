@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css');
 
 * {
     margin: 0;
@@ -7,4 +9,13 @@
     color: #f3f3f3;
     font-family: "League Spartan", sans-serif;
     list-style-type: none;
+}
+
+:root {
+    --background: #1C1C1C;
+    --orange: #FF8A00;
+    --orange-smoke: #8F4D00;
+    --orange-dark: #DD3500;
+    --white: #f3f3f3;
+    --white-smoke: #f0f0f0;
 }

@@ -3,7 +3,7 @@
     height: 80px;
     border-radius: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -108,8 +108,16 @@
         position: relative
     }
 
+    #menu img#logo {
+        position: absolute;
+        left: calc(100% - 100px);
+        top: 50%;
+        max-width: 45px;
+        transform: translateY(-50%);
+    }
+
     #menu ul {
-        background: #444444;
+        background: #232323;
         position: absolute;
         top: 100%;
         right: 0;
@@ -138,9 +146,10 @@
     #menu input,
     #menu label {
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 0;
-        display: block
+        display: block;
+        transform: translateY(-50%);
     }
 
     #menu input {

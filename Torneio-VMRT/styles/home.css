@@ -1,6 +1,6 @@
 main {
-    background: url(../Images/Torneio_VMRT_fundo.gif);
-    background-size: 100% 100%;
+    background: url(../Images/fullFunfo.gif);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -28,7 +28,7 @@ main button:hover {
     color: #ff8c00;
 }
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 801px) {
     main {
         background: url("../Images/Torneio_VMRT_fundo_celular.gif");
         background-size: cover;
