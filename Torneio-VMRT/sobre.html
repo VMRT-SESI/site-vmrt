@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre</title>
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/root.css">
-    <link rel="stylesheet" href="./styles/sobre.css">
-    <link rel="shortcut icon" href="./Images/VMRT.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/root.css" />
+    <link rel="stylesheet" href="./styles/sobre.css" />
+    <link rel="shortcut icon" href="./Images/VMRT.png" type="image/x-icon" />
+  </head>
 
-<body>
-    <header>
-        <div class="container_header">
-            <a href="./home.html" class="header_redirect_logo">
-                <img src="./Images/VMRT.png" alt="logo_vmrt" class="logo_vmrt">
-            </a>
-            <ul class="header_redirect_list">
-                <li>
-                    <a href="sobre.html" class="header_redirect_option">Sobre</a>
-                </li>
-                <li>
-                    <a href="./edicao.html" class="header_redirect_option">Edição 2024</a>
-                </li>
-                <li>
-                    <a href="./galeria.html" class="header_redirect_option">Galeria</a>
-                </li>
-                <li>
-                    <a href="./contatos.html" class="header_redirect_option">Contatos</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+  <body>
+    <nav id="menu">
+      <div class="logo">
+        <img src="./Images/VMRT.png" alt="logo" id="logo" />
+      </div>
+      <input
+        type="checkbox"
+        id="responsive-menu"
+        onclick="updatemenu()"
+      /><label></label>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li>
+          <a class="dropdown-arrow" href="./edicoes/edicao_2024.html">Edição</a>
+          <ul class="sub-menus">
+            <li><a href="./edicoes/edicao_2024.html">Edição 2024</a></li>
+            <li><a href="./edicoes/edicao_2023.html">Edição 2023</a></li>
+          </ul>
+        </li>
+        <li><a href="./galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
     <main>
-        <section class="container_sobre sobre">
-            <article>
-                <h1>Sobre</h1>
-                <p>O Torneio VMRT é uma iniciativa inspirada nos campeonatos FIRST LEGO League (FLL) e na Olimpíada
-                    Brasileira de Robótica (OBR), criada para envolver tanto a escola quanto a comunidade. Este evento
-                    vai além das competições de robôs realizando missões; ele busca destacar a criatividade, o trabalho
-                    em equipe e a inovação dos participantes. Nosso objetivo é demonstrar que a robótica é um campo
-                    amplo e fascinante, repleto de possibilidades que ultrapassam a simples programação, execução de
-                    tarefas e que é muito mais que robôs.</p>
-            </article>
-            <img src="./Images/foto1.jpeg" alt="foto1">
-        </section>
-        <section class="container_sobre image">
-            <img src="./Images/foto2.jpeg" alt="foto2">
-            <img src="./Images/foto3.jpeg" alt="foto3">
-        </section>
-        <section class="container_sobre modalidades">
-            <div class="container_images">
-                <img src="./Images/foto5.jpeg" alt="foto5">
-                <img src="./Images/foto6.jpeg" alt="foto6">
-            </div>
-            <article>
-                <h2>Modalidades</h2>
-                <h3>Torneio Interno VMRT</h3>
-                <p>Voltado para os estudantes do 6º Ano ao 9º Ano da unidade escolar, esta modalidade tem como objetivo
-                    aprofundar os conhecimentos dos alunos em robótica e proporcionar a experiência de participar de um
-                    campeonato. Os alunos terão a oportunidade de desenvolver habilidades técnicas e de programação,
-                    pesquisa, montagem, além de trabalhar em equipe para resolver desafios propostos.</p>
+      <section class="container_sobre sobre">
+        <article>
+          <h1>Sobre</h1>
+          <p>
+            O Torneio VMRT é uma iniciativa inspirada nos campeonatos FIRST LEGO
+            League (FLL) e na Olimpíada Brasileira de Robótica (OBR), criada
+            para envolver tanto a escola quanto a comunidade. Este evento vai
+            além das competições de robôs realizando missões; ele busca destacar
+            a criatividade, o trabalho em equipe e a inovação dos participantes.
+            Nosso objetivo é demonstrar que a robótica é um campo amplo e
+            fascinante, repleto de possibilidades que ultrapassam a simples
+            programação, execução de tarefas e que é muito mais que robôs.
+          </p>
+        </article>
+        <img src="./Images/foto1.jpeg" alt="foto1" />
+      </section>
+      <section class="container_sobre image">
+        <img src="./Images/foto2.jpeg" alt="foto2" />
+        <img src="./Images/foto3.jpeg" alt="foto3" />
+      </section>
+      <section class="container_sobre modalidades">
+        <div class="container_images">
+          <img src="./Images/foto5.jpeg" alt="foto5" />
+          <img src="./Images/foto6.jpeg" alt="foto6" />
+        </div>
+        <article>
+          <h2>Modalidades</h2>
+          <h3>Torneio Interno VMRT</h3>
+          <p>
+            Voltado para os estudantes do 6º Ano ao 9º Ano da unidade escolar,
+            esta modalidade tem como objetivo aprofundar os conhecimentos dos
+            alunos em robótica e proporcionar a experiência de participar de um
+            campeonato. Os alunos terão a oportunidade de desenvolver
+            habilidades técnicas e de programação, pesquisa, montagem, além de
+            trabalhar em equipe para resolver desafios propostos.
+          </p>
 
-                <h3>Torneio Externo VMRT</h3>
-                <p>Destinado a equipes que já competem ou planejam competir em campeonatos de robótica, esta modalidade
-                    tem o intuito de promover a troca de experiências e conhecimentos entre os participantes. Além de
-                    incentivar a colaboração e a inovação, o Torneio Externo VMRT proporciona um ambiente onde as
-                    equipes podem testar suas habilidades em desafios avançados, preparando-se melhor para competições
-                    maiores.</p>
-            </article>
-        </section>
+          <h3>Torneio Externo VMRT</h3>
+          <p>
+            Destinado a equipes que já competem ou planejam competir em
+            campeonatos de robótica, esta modalidade tem o intuito de promover a
+            troca de experiências e conhecimentos entre os participantes. Além
+            de incentivar a colaboração e a inovação, o Torneio Externo VMRT
+            proporciona um ambiente onde as equipes podem testar suas
+            habilidades em desafios avançados, preparando-se melhor para
+            competições maiores.
+          </p>
+        </article>
+      </section>
     </main>
-</body>
-
+    <script src="./script/menu.js"></script>
+  </body>
 </html>

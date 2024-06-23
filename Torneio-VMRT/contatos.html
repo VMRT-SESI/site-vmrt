@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Em desenvolvimento</title>
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/root.css">
-    <link rel="stylesheet" href="./styles/galeria.css">
-    <link rel="shortcut icon" href="./Images/VMRT.png" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="container_header">
-            <a href="./home.html" class="header_redirect_logo">
-                <img src="./Images/VMRT.png" alt="logo_vmrt" class="logo_vmrt">
-            </a>
-            <ul class="header_redirect_list">
-                <li>
-                    <a href="./sobre.html" class="header_redirect_option">Sobre</a>
-                </li>
-                <li>
-                    <a href="./edicao.html" class="header_redirect_option">Edição 2024</a>
-                </li>
-                <li>
-                    <a href="./galeria.html" class="header_redirect_option">Galeria</a>
-                </li>
-                <li>
-                    <a href="./contatos.html" class="header_redirect_option">Contatos</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/root.css" />
+    <link rel="stylesheet" href="./styles/galeria.css" />
+    <link rel="shortcut icon" href="./Images/VMRT.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav id="menu">
+      <div class="logo">
+        <img src="./Images/VMRT.png" alt="logo" id="logo" />
+      </div>
+      <input
+        type="checkbox"
+        id="responsive-menu"
+        onclick="updatemenu()"
+      /><label></label>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li>
+          <a class="dropdown-arrow" href="./edicoes/edicao_2024.html">Edição</a>
+          <ul class="sub-menus">
+            <li><a href="./edicoes/edicao_2024.html">Edição 2024</a></li>
+            <li><a href="./edicoes/edicao_2023.html">Edição 2023</a></li>
+          </ul>
+        </li>
+        <li><a href="./galeria.html">Galeria</a></li>
+        <li><a href="./contatos.html">Contatos</a></li>
+      </ul>
+    </nav>
     <main>
-        <h1>Calma aí robô!</h1>
-        <p>Essa página está em desenvolvimento! Aguarde mais um pouquinho robozinho.
-        </p>
+      <h1>Calma aí robô!</h1>
+      <p>
+        Essa página está em desenvolvimento! Aguarde mais um pouquinho
+        robozinho.
+      </p>
     </main>
-</body>
+    <script src="./script/menu.js"></script>
+  </body>
 </html>
