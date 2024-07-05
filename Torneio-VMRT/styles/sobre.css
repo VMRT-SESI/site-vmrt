@@ -132,6 +132,7 @@ section.v14_60 {
 }
 
 section.v14_60 .v14_61 {
+    margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
