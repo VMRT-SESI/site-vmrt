@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torneio VMRT</title>
+    <link rel="stylesheet" href="./Torneio-VMRT/styles/root.css" />
+    <link rel="stylesheet" href="./Torneio-VMRT/styles/header.css" />
+    <link rel="stylesheet" href="./Torneio-VMRT/styles/home.css" />
+    <link rel="shortcut icon" href="./Torneio-VMRT/Images/VMRT.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <main>
+      <nav id="menu">
+        <div class="logo">
+          <img src="./Torneio-VMRT/Images/VMRT.png" alt="logo" id="logo" />
+        </div>
+        <input
+          type="checkbox"
+          id="responsive-menu"
+          onclick="updatemenu()"
+        /><label></label>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Torneio-VMRT/sobre.html">Sobre</a></li>
+          <li>
+            <a class="dropdown-arrow" href="./Torneio-VMRT/edicoes/edicao_2024.html">Edição</a>
+            <ul class="sub-menus">
+              <li><a href="./Torneio-VMRT/edicoes/edicao_2024.html">Edição 2024</a></li>
+              <li><a href="./Torneio-VMRT/edicoes/edicao_2023.html">Edição 2023</a></li>
+            </ul>
+          </li>
+          <li><a href="./Torneio-VMRT/galeria.html">Galeria</a></li>
+          <li><a href="./Torneio-VMRT/contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+      <button id="button_redirect">Saiba Mais</button>
+    </main>
+    <script src="./Torneio-VMRT/script/menu.js"></script>
+    <script src="./Torneio-VMRT/script/redirect.js"></script>
+  </body>
+</html>
