@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "League Spartan", sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+}
+
 #menu {
     background: #121212;
     height: 80px;
@@ -9,7 +14,7 @@
 
 #menu img#logo {
     margin-left: 1rem;
-    max-width: 60px;
+    max-width: 45px;
 }
 
 #menu ul,
@@ -34,8 +39,9 @@
     display: block;
     padding-inline: 2rem;
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 21px;
+    color: #f3f3f3;
+    font-size: 16px;
+    font-family: "League Spartan", sans-serif;
 }
 
 #menu a.dropdown-arrow:after {
@@ -44,8 +50,7 @@
 }
 
 #menu li a:hover {
-    color: #F3F3F3;
-    background: #F26B1F;
+    color: #F26B1F;
 }
 
 #menu input {
